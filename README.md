@@ -11,7 +11,6 @@ API server using Express and Mongoose to interact with a MongoDB database.
 5. Install gulp globally: `npm i gulp -g`
 6. Install and run MongoDB
 7. Run the server locally: `gulp dev`
-8. Finally open [localhost:4000/api/](http://localhost:4000/api/
 
 ## Running the Tests
 
