@@ -1,0 +1,42 @@
+{
+  "env": {
+    "node": true,
+    "mocha": true,
+    "es6": true
+  },
+  "globals": {
+  },
+  "rules": {
+    "arrow-parens": [2, "always"],
+    "arrow-spacing": 2,
+    "brace-style": [2, "1tbs"],
+    "camelcase": 2,
+    "curly": 2,
+    "dot-notation": 2,
+    "eol-last": 0,
+    "eqeqeq": [2, "smart"],
+    "max-len": [1, 100],
+    "new-cap": 0,
+    "no-const-assign": 2,
+    "no-extra-parens": 1,
+    "no-floating-decimal": 2,
+    "no-inner-declarations": [2, "both"],
+    "no-mixed-requires": [2, true],
+    "no-nested-ternary": 2,
+    "no-path-concat": 2,
+    "no-redeclare": 2,
+    "no-spaced-func": 2,
+    "no-underscore-dangle": 0,
+    "no-unused-vars": [2, {"vars": "all", "args": "after-used"}],
+    "no-use-before-define": [2, "nofunc"],
+    "no-var": 2,
+    "no-warning-comments": 0,
+    "object-curly-spacing": [2, "always"],
+    "quotes": [2, "single"],
+    "semi": [2, "always"],
+    "space-after-keywords": [2, "always"],
+    "space-infix-ops": 2,
+    "strict": [2, "global"],
+    "valid-jsdoc": 0
+  }
+}
