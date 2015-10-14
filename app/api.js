@@ -39,7 +39,7 @@ function httpCreateNewCar(req, res) {
 };
 
 /*
- * Sample route to get the list of cars in from MongoDB.
+ * Sample route to get the list of cars in our database.
  */
 function httpGetCarList(req, res) {
   return Car.find({})

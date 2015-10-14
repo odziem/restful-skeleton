@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 
 require('./config.js');
 
-mongoose.connect('mongodb://localhost/rangleu');
+mongoose.connect(process.env.DATABASE_URL);
 
 api.configure(app);
 
