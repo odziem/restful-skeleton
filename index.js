@@ -27,12 +27,12 @@ mongoose.connect(process.env.DATABASE_URL);
 
 api.configure(app);
 
-app.use(function (req, res) {
+app.use((req, res) => {
   res.status(404).send();
 });
 
 if (require.main === module) {
-  app.listen(process.env.PORT, function() {
+  app.listen(process.env.PORT, () => {
     winston.info(`Listening on http://localhost:${process.env.PORT}...`);
   });
 }

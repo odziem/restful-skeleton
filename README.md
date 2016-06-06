@@ -6,11 +6,11 @@ API server using Express and Mongoose to interact with a MongoDB database.
 
 1. Install Node Version Manager using Homebrew with `brew install nvm`
 2. Add it to your shell: `echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.bash_profile`
-3. Install Node.js using NVM: `nvm install v4.1.2`
+3. Install Node.js using NVM: `nvm install v6.2.0`
 4. Install npm dependencies: `npm install`
-5. Install gulp globally: `npm i gulp -g`
-6. Install and run MongoDB
-7. Run the server locally: `gulp dev`
+5. Install MongoDB: `brew install mongodb`
+6. Run MongoDB
+7. Run the server locally: `npm start`
 
 ## Running the Tests
 

@@ -5,7 +5,7 @@ const winston = require('winston');
 const router = require('express').Router();
 const Car = require('./car.model');
 
-exports.configure = function(app) {
+exports.configure = (app) => {
   router.post('/api/cars', httpCreateNewCar);
   router.get('/api/cars', httpGetCarList);
 
@@ -18,6 +18,7 @@ exports.configure = function(app) {
 function httpCreateNewCar(req, res) {
   const data = req.body;
 
+  const { name, brand } = data;
   const name = data.name;
   const brand = data.brand;
 
@@ -36,7 +37,7 @@ function httpCreateNewCar(req, res) {
     winston.error(err);
     return res.status(500).json({ error: 'Failed to save car.' });
   });
-};
+}
 
 /*
  * Sample route to get the list of cars in our database.
@@ -50,4 +51,4 @@ function httpGetCarList(req, res) {
     winston.error(err);
     return res.status(500).json({ error: 'Failed to get car list' });
   });
-};
+}
