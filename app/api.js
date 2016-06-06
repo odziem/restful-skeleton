@@ -19,8 +19,6 @@ function httpCreateNewCar(req, res) {
   const data = req.body;
 
   const { name, brand } = data;
-  const name = data.name;
-  const brand = data.brand;
 
   if (!name || !brand) {
     return res.status(400).json({ error: 'Required data missing.' });
