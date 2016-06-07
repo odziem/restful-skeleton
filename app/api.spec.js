@@ -39,5 +39,22 @@ describe('Cars API', () => {
           expect(engineOperational).to.equal(false);
         });
     });
+
+    it('should not add a car to the collection if name is missing', () => {
+      return request(app).post('/api/cars')
+        .send({
+          brand: 'Ferrari',
+          engineOperational: false
+        })
+        .expect(400);
+    });
+
+    it('should not add a car to the collection if brand is missing', () => {
+      return request(app).post('/api/cars')
+        .send({
+          name: '458'
+        })
+        .expect(400);
+    });
   });
 });
